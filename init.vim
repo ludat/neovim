@@ -59,7 +59,7 @@ set foldmethod=marker
 " }}}
 " Confuration for plugins {{{
 " Plug stuff {{{
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 " My plugs here:
 Plug 'bling/vim-airline' " Make the bar prettier
