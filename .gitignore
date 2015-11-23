@@ -1,4 +1,4 @@
 .netrwhist
 plug.vim.old
-vim/plugged
-vim/spell
+plugged
+spell

@@ -66,13 +66,13 @@ Plug 'bling/vim-airline' " Make the bar prettier
 Plug 'tpope/vim-fugitive' " Add awesome support for git
 Plug 'airblade/vim-gitgutter' " Show deleted/added/modified tags for vim
 Plug 'sjl/gundo.vim' " Undo and redo tree
-Plug 'kien/ctrlp.vim' " Fuzzy find for files
-Plug 'scrooloose/syntastic' " Syntax checker
+Plug 'ctrlpvim/ctrlp.vim' " Fuzzy find for files
+Plug 'benekastah/neomake' " Syntax checker
 Plug 'Lokaltog/vim-easymotion' " Fast move inside vim
 Plug 'justinmk/vim-sneak' " More magick s command
 Plug 'majutsushi/tagbar', { 'on': 'TagbarOpen' } " Tags for coding
 Plug 'tomtom/tcomment_vim' " Comment and uncomment code
-Plug 'Shougo/neocomplete.vim' " Completition everywhere
+Plug 'Shougo/deoplete.nvim' " Completition everywhere
 Plug 'SirVer/ultisnips' " Tab completition when writing
 Plug 'honza/vim-snippets' " Snippets for ultisnip
 Plug 'godlygeek/tabular' " Tabularize with :Tab /{regex} or visual select and the same
@@ -84,7 +84,7 @@ Plug 'vim-scripts/django.vim'
 Plug 'vim-scripts/listmaps.vim' " List maps
 Plug 'luochen1990/rainbow' " Color different paretheses
 Plug 'tpope/vim-repeat' " Improve the . repeat command
-Plug 'tkztmk/vim-vala' " Add syntax highlight for vala
+" Plug 'tkztmk/vim-vala' " Add syntax highlight for vala
 Plug 'rust-lang/rust.vim' " Add syntax highlight for rust
 " Plug 'phildawes/racer', { 'for': 'rust','do': 'cargo build --release'}
 Plug 'chase/vim-ansible-yaml' " Add syntax highlight for ansible yaml
@@ -124,16 +124,6 @@ let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlPLastMode'
 let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
 " }}}
-" neocomplete {{{
-let g:neocomplete#enable_at_startup = 1
-if !exists('g:neocomplete#force_omni_input_patterns')
-    let g:neocomplete#force_omni_input_patterns = {}
-endif
-autocmd FileType python setlocal omnifunc=jedi#completions
-let g:neocomplete#force_omni_input_patterns.python =
-\ '\%([^. \t]\.\|^\s*@\|^\s*from\s.\+import \|^\s*from \|^\s*import \)\w*'
-" alternative pattern: '\h\w*\|[^. \t]\.\w*'
-" }}}
 " jedi-vim {{{
 let g:jedi#completions_enabled = 0
 let g:jedi#auto_vim_configuration = 0
@@ -166,10 +156,6 @@ hi IndentGuidesEven ctermbg=236
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_start_level = 0
 let g:indent_guides_guide_size = 1
-" }}}
-" races {{{
-let g:racer_cmd = "/home/lucas/.vim/plugged/racer/target/release/racer"
-let $RUST_SRC_PATH="/home/lucas/.vim/plugged/racer/src/"
 " }}}
 " }}}
 " colorscheme {{{
