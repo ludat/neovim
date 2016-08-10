@@ -93,6 +93,7 @@ Plug 'chase/vim-ansible-yaml' " Add syntax highlight for ansible yaml
 Plug 'vim-scripts/iptables' " Add syntax highlight for iptables
 Plug 'rstacruz/sparkup' " Magic to create html
 Plug 'cespare/vim-toml' " Because cargo.toml
+Plug 'wellle/targets.vim' " provide additional text objects
 " Plug 'Yggdroot/indentLine' " Add indent lines with special char
 " Plug 'FredKSchott/CoVim' " Peer programming he he he
 " Plug 'terryma/vim-multiple-cursors' " Multiple cursors support
