@@ -97,14 +97,27 @@ Plug 'wellle/targets.vim' " provide additional text objects
 " Plug 'Yggdroot/indentLine' " Add indent lines with special char
 " Plug 'FredKSchott/CoVim' " Peer programming he he he
 " Plug 'terryma/vim-multiple-cursors' " Multiple cursors support
-" Colorschemes
+" Haskell {{{
+Plug 'eagletmt/neco-ghc' " completion from ghc-mod
+Plug 'eagletmt/ghcmod-vim' " ghcmod reasons
+" }}}
+" Colorschemes {{{
 Plug 'sjl/badwolf' " badwolf
 Plug 'nanotech/jellybeans.vim' " jellybeans
+" }}}
 
 call plug#end()
 
 " }}}
 " syntastic {{{
+" }}}
+" deoplete {{{
+let g:deoplete#enable_at_startup = 1
+" }}}
+" haskell {{{
+" Disable haskell-vim omnifunc
+let g:haskellmode_completion_ghc = 0
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 " }}}
 " ultisnips {{{
 let g:UltiSnipsExpandTrigger="<tab>"
