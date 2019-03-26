@@ -78,7 +78,6 @@ Plug 'SirVer/ultisnips' " Tab completition when writing
 Plug 'honza/vim-snippets' " Snippets for ultisnip
 Plug 'godlygeek/tabular' " Tabularize with :Tab /{regex} or visual select and the same
 Plug 'tpope/vim-surround' " Tpope surround plugin for improved surround tags
-Plug 'davidhalter/jedi-vim', { 'for': 'python' } " Autocompletition for python
 Plug 'lervag/vimtex', { 'for': 'tex' } " Add latex support
 Plug 'kshenoy/vim-signature' " Better bookmarks
 Plug 'vim-scripts/django.vim'
